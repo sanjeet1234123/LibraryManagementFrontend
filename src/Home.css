@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #41acff;
+    color: white;
+}
+
+.inner-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+
+}
+
+.search-result p{
+    display: inline;
+    margin-right: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo img {
+    width: 4.5vw;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input {
+    width: 57vw;
+    padding: 12px;
+    margin-right: 24px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.search input:active {
+    border: 2px solid green;
+  }
+
+.search button {
+    background-color: white;
+    border: 2px solid #41acff;
+    color: rgb(0 0 0 / 81%);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: auto;
+    border-radius: 25px;
+    font-weight: 900;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .5s;
+    height: 48px;
+}
+
+.logout-btn {
+    background-color: white;
+    border: 2px solid #41acff;
+    color: rgb(0 0 0 / 81%);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: auto;
+    border-radius: 25px;
+    font-weight: 900;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .5s;
+    height: 48px;
+}
+
+.book-display {
+    padding: 30px;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 5px;
+    margin-left: 60px;
+}
+
+.book {
+    margin: 5px;
+    text-align: center;
+
+}
+
+.book img {
+    width: 400px;
+    height: 400px;
+}
+
+.book p {
+    margin: 20px;
+    font-size: 25px;
+    color: #1e1e1e;
+    font-family: 'sf_pro_displayheavy';
+    /* font-weight: bold; */
+}
+
+.book-display h2 {
+    padding-left: 79px;
+    font-size: 2.9rem;
+    line-height: 100%;
+    color: #1e1e1e;
+    font-family: 'sf_pro_displayheavy';
+}
+
+.dropDown-container{
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bar {
+    background-color: #333;
+    height: 6px;
+    width: 3vw;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .menu-options {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .menu-options.open {
+    max-height: 150px; 
+  }
+  
+  .menu-options div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-options div:hover {
+    background-color: white;
+
+  }
+
